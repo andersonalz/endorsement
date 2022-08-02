@@ -78,7 +78,7 @@ router.post('/multiUpdate' , uploadImage ,async (req, res)=>{
         path: ele.path,
         type: ele.mimetype,
         size: ele.size,
-        indorsement: ele.indorsement,
+        indorsement: req.body.indorsement,
       }
       filesArray.push(file)
     });
